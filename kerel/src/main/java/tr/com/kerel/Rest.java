@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(name = "test")
+@RequestMapping("/m1")
 public class Rest {
 
-	@RequestMapping(name = "Deneme", method = RequestMethod.GET)
+	@RequestMapping(value =  "/m2", method = RequestMethod.GET)
 	public String Test() {
 		return "aa";
 	}
